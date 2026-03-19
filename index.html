@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国象棋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 选择颜色界面 -->
+    <div id="color-selection" class="color-selection">
+        <div class="color-selection-content">
+            <h2>选择您的颜色</h2>
+            <div class="color-options">
+                <button id="white-btn" class="btn color-btn white">白方</button>
+                <button id="black-btn" class="btn color-btn black">黑方</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>中国象棋</h1>
+        
+        <!-- 当前走棋方指示器 -->
+        <div class="turn-indicator">
+            当前轮到：<span id="turn">红方</span>
+        </div>
+        
+        <!-- 将军提示 -->
+        <div id="check-indicator" class="check-indicator">
+            <span id="check-message"></span>
+        </div>
+        
+        <!-- 无效走法提示 -->
+        <div id="error-indicator" class="error-indicator">
+            <span id="error-message"></span>
+        </div>
+        
+        <!-- 棋盘容器 -->
+        <div class="board-container">
+            <div id="chess-board" class="chess-board"></div>
+        </div>
+        
+        <!-- 按钮区域 -->
+        <div class="button-container">
+            <button id="restart-btn" class="btn restart-btn">重新开始</button>
+            <button id="undo-btn" class="btn undo-btn">悔棋</button>
+        </div>
+        
+        <!-- 游戏结束提示 -->
+        <div id="game-over" class="game-over">
+            <div class="game-over-content">
+                <h2 id="winner"></h2>
+                <button id="play-again-btn" class="btn play-again-btn">再玩一局</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
